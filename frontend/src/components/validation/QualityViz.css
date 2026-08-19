@@ -1,0 +1,69 @@
+.quality-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.quality-gauge-value {
+  margin-top: -34px;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.quality-gauge-number {
+  font-size: 2rem;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.quality-gauge-unit {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.quality-gauge-label {
+  font-size: 0.82rem;
+  font-weight: 650;
+  margin-top: 2px;
+}
+
+.rule-breakdown-legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.rule-breakdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rule-breakdown-name {
+  font-size: 0.85rem;
+  font-weight: 550;
+}
+
+.rule-breakdown-track {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--gridline);
+  overflow: hidden;
+}
+
+.rule-breakdown-fill {
+  height: 100%;
+  border-radius: 999px;
+  min-width: 4px;
+}
+
+.quality-trend-tooltip {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  min-height: 18px;
+}

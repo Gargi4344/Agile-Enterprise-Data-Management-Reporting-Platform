@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:16-alpine:///aedmp_test
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+aedmp:
+  security:
+    jwt:
+      secret: test-only-secret-test-only-secret-32b
+      expiration-minutes: 60
+      issuer: aedmp-platform-test
+  storage:
+    mode: local
+    local-path: ./data/test-datasets

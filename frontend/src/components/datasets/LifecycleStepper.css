@@ -1,0 +1,104 @@
+.lifecycle-stepper {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 4px;
+}
+
+.lifecycle-step {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 0;
+}
+
+.lifecycle-step:last-child {
+  flex: none;
+}
+
+.lifecycle-step-marker {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex: none;
+  border: 2px solid var(--border-strong);
+  background: var(--surface-1);
+  color: var(--text-muted);
+  z-index: 1;
+}
+
+.lifecycle-step-complete .lifecycle-step-marker {
+  background: var(--status-good);
+  border-color: var(--status-good);
+  color: #fff;
+}
+
+.lifecycle-step-current .lifecycle-step-marker {
+  background: var(--series-1);
+  border-color: var(--series-1);
+  color: #fff;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--series-1) 22%, transparent);
+}
+
+.lifecycle-step-attention .lifecycle-step-marker {
+  background: var(--status-warning);
+  border-color: var(--status-warning);
+  color: #47340a;
+}
+
+.lifecycle-step-error .lifecycle-step-marker {
+  background: var(--status-critical);
+  border-color: var(--status-critical);
+  color: #fff;
+}
+
+.lifecycle-step-label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 0;
+}
+
+.lifecycle-step-label span:first-child {
+  font-weight: 650;
+  font-size: 0.88rem;
+}
+
+.lifecycle-step-status {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.lifecycle-step-connector {
+  flex: 1;
+  height: 2px;
+  background: var(--border-strong);
+  min-width: 20px;
+}
+
+.lifecycle-step-complete .lifecycle-step-connector {
+  background: var(--status-good);
+}
+
+@media (max-width: 700px) {
+  .lifecycle-stepper {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .lifecycle-step {
+    flex: none;
+    width: 100%;
+  }
+  .lifecycle-step-connector {
+    display: none;
+  }
+}

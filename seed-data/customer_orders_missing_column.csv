@@ -1,0 +1,3 @@
+order_id,order_date,amount,status,region
+ORD-2001,2026-05-01,42.50,PENDING,NA
+ORD-2002,2026-05-01,108.00,SHIPPED,EMEA

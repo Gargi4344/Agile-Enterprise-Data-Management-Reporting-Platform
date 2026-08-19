@@ -1,0 +1,33 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-0);
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-brand h1 {
+  font-size: 1.3rem;
+}
+
+.demo-accounts table {
+  font-size: 0.76rem;
+}
+
+.demo-accounts td,
+.demo-accounts th {
+  padding: 6px 8px;
+  white-space: nowrap;
+}

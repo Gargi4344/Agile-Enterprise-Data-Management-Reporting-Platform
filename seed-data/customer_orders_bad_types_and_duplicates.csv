@@ -1,0 +1,4 @@
+order_id,customer_email,order_date,amount,status,region
+ORD-3001,not-an-email,2026-05-01,not-a-number,PENDING,NA
+ORD-3001,dupe.customer@example.com,2026-05-01,20.00,UNKNOWN_STATUS,NA
+ORD-3002,,2026-05-02,-5.00,SHIPPED,EMEA

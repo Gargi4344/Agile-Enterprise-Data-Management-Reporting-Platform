@@ -1,0 +1,9 @@
+order_id,customer_email,order_date,amount,status,region
+ORD-1001,jane.doe@example.com,2026-05-01,42.50,PENDING,NA
+ORD-1002,sam.lee@example.com,2026-05-01,108.00,SHIPPED,EMEA
+ORD-1003,pat.morgan@example.com,2026-05-02,19.99,DELIVERED,APAC
+ORD-1004,robin.kim@example.com,2026-05-02,76.25,PENDING,NA
+ORD-1005,taylor.reed@example.com,2026-05-03,204.10,SHIPPED,
+ORD-1006,jordan.avery@example.com,2026-05-03,15.00,DELIVERED,EMEA
+ORD-1007,casey.nolan@example.com,2026-05-04,58.40,PENDING,APAC
+ORD-1008,drew.hale@example.com,2026-05-04,133.75,SHIPPED,NA
