@@ -1,0 +1,22 @@
+# Maven build output
+backend/target/
+
+# Files written by the backend at runtime and by tests
+backend/data/
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/coverage/
+
+# Environment files
+.env
+.env.local
+*.local
+
+# IDE and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
